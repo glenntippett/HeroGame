@@ -30,6 +30,7 @@ class Hero {
   moveHero (event) {
     switch (event.code) {
       case 'ArrowUp':
+      case 'KeyW':
         this._heroTop -= this._moveSpeed
         this._hero.style.top = `${this._heroTop}px`
         this._hero.style.backgroundImage = 'url(./assets/hero/Hero_Walk_Up.gif'
@@ -38,6 +39,7 @@ class Hero {
         })
         break
       case 'ArrowRight':
+      case 'KeyD':
         this._heroLeft += this._moveSpeed
         this._hero.style.left = `${this._heroLeft}px`
         this._hero.style.backgroundImage = 'url(./assets/hero/Hero_Walk_Right.gif'
@@ -46,6 +48,7 @@ class Hero {
         })
         break
       case 'ArrowDown':
+      case 'KeyS':
         this._heroTop += this._moveSpeed
         this._hero.style.top = `${this._heroTop}px`
         this._hero.style.backgroundImage = 'url(./assets/hero/Hero_Walk_Down.gif'
@@ -54,6 +57,7 @@ class Hero {
         })
         break
       case 'ArrowLeft':
+      case 'KeyA':
         this._heroLeft -= this._moveSpeed
         this._hero.style.left = `${this._heroLeft}px`
         this._hero.style.backgroundImage = 'url(./assets/hero/Hero_Walk_Left.gif'
