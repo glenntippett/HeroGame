@@ -20,7 +20,11 @@ class Hero {
   }
 
   attack () {
-    this._hero.style.backgroundImage = 'url(./assets/hero/Hero_Attack_Down.gif'
+    const attackDown = 'url(./assets/hero/Hero_Attack_Down.gif'
+    const attackUp = 'url(./assets/hero/Hero_Attack_Up.gif'
+    const attackRight = 'url(./assets/hero/Hero_Attack_Right.gif'
+    const attackLeft = 'url(./assets/hero/Hero_Attack_Left.gif'
+    this._hero.style.backgroundImage = attackDown
   }
 
   moveHero (event) {

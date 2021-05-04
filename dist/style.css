@@ -2,7 +2,7 @@
   --game-container-height: 500px;
   --game-container-width: 700px;
   --hero-height: 200px;
-  --hero-width: 60px;
+  --hero-width: 100px;
   --knight-height: 90px;
   --knight-width: 80px;
 }
@@ -53,16 +53,24 @@ body {
   z-index: 5;
 }
 
-.knight-speech {
+.speech {
   max-width: 250px;
   background-color: white;
   border-radius: 16px;
   padding: 16px;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
+  display: none;
+}
+
+.knight-speech {
   top: 30px;
   left: calc(100px + var(--knight-width));
-  display: none;
+}
+
+.old-man-speech {
+  top: 50px;
+  left: 400px;
 }
 
 .hut {
